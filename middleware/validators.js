@@ -12,6 +12,6 @@ exports.signupValidator = [
         })
         .normalizeEmail(),
     body("password").trim().isLength({ min: 5 }),
-    body('firstname').trim().not().isEmpty(),
-    body('lastname').trim().not().isEmpty(),
+    body("firstName").trim().not().isEmpty(),
+    body("lastName").trim().not().isEmpty(),
 ];
